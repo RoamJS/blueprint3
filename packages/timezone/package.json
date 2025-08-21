@@ -1,7 +1,10 @@
 {
-    "name": "@blueprintjs/timezone",
+    "name": "blueprint3-timezone",
     "version": "3.9.14",
-    "description": "Components related to timezone selection and UI",
+    "description": "Components related to timezone selection and UI - React 18.2.0 compatible fork",
+    "publishConfig": {
+        "access": "public"
+    },
     "main": "lib/cjs/index.js",
     "module": "lib/esm/index.js",
     "esnext": "lib/esnext/index.js",
@@ -20,7 +23,7 @@
         "compile:css": "sass-compile ./src",
         "dev": "run-p \"compile:esm -- --watch\" \"compile:css -- --watch\"",
         "dist": "run-s \"dist:*\"",
-        "dist:bundle": "cross-env NODE_ENV=production webpack",
+        "dist:bundle": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider webpack",
         "dist:css": "css-dist lib/css/*.css",
         "dist:verify": "assert-package-layout",
         "lint": "run-p lint:scss lint:es",
@@ -44,8 +47,8 @@
         "tslib": "~1.13.0"
     },
     "peerDependencies": {
-        "react": "^16.3.0 || ^17.0.0 || ^18.0.0",
-        "react-dom": "^16.3.0 || ^17.0.0 || ^18.0.0"
+        "react": "^16.3.0 || ^17.0.0 || ^18.0.0 || ^18.2.0",
+        "react-dom": "^16.3.0 || ^17.0.0 || ^18.0.0 || ^18.2.0"
     },
     "devDependencies": {
         "@blueprintjs/node-build-scripts": "^1.6.1",
