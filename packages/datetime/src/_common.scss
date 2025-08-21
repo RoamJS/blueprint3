@@ -1,8 +1,14 @@
 // Copyright 2017 Palantir Technologies, Inc. All rights reserved.
 // Licensed under the Apache License, Version 2.0.
 
-@import "~@blueprintjs/core/src/common/variables";
-@import "~@blueprintjs/icons/src/icons";
+@import "../../core/src/common/variables";
+// @import "~@blueprintjs/icons/src/icons"; // temporarily disabled
+
+// Temporary definition for pt-icon-colors mixin
+@mixin pt-icon-colors() {
+  // Basic icon color styling - this is a simplified version
+  color: inherit;
+}
 
 $datepicker-padding: $pt-grid-size / 2 !default;
 
