@@ -1,6 +1,6 @@
 {
     "name": "blueprint3-datetime",
-    "version": "3.23.15",
+    "version": "3.23.16",
     "description": "Components for interacting with dates and times - Node 22 compatible fork",
     "main": "lib/cjs/index.js",
     "module": "lib/esm/index.js",
@@ -42,8 +42,8 @@
         "tslib": "~1.13.0"
     },
     "peerDependencies": {
-        "react": "^16.3.0 || ^17.0.0 || ^18.0.0",
-        "react-dom": "^16.3.0 || ^17.0.0 || ^18.0.0"
+        "react": "^16.3.0 || ^17.0.0 || ^18.0.0 || ^18.2.0",
+        "react-dom": "^16.3.0 || ^17.0.0 || ^18.0.0 || ^18.2.0"
     },
     "devDependencies": {
         "blueprint3-colors": "^4.0.0",

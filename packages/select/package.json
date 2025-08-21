@@ -1,6 +1,6 @@
 {
     "name": "blueprint3-select",
-    "version": "3.18.7",
+    "version": "3.18.8",
     "description": "Components related to selecting items from a list - Node 22 compatible fork",
     "main": "lib/cjs/index.js",
     "module": "lib/esm/index.js",
@@ -40,8 +40,8 @@
         "tslib": "~1.13.0"
     },
     "peerDependencies": {
-        "react": "^16.3.0 || ^17.0.0 || ^18.0.0",
-        "react-dom": "^16.3.0 || ^17.0.0 || ^18.0.0"
+        "react": "^16.3.0 || ^17.0.0 || ^18.0.0 || ^18.2.0",
+        "react-dom": "^16.3.0 || ^17.0.0 || ^18.0.0 || ^18.2.0"
     },
     "devDependencies": {
         "@blueprintjs/karma-build-scripts": "^2.0.2",
