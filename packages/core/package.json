@@ -1,6 +1,6 @@
 {
     "name": "blueprint3-core",
-    "version": "3.50.4-alpha.1",
+    "version": "3.50.4-alpha.2",
     "description": "Core styles & components - React 18 compatible fork",
     "publishConfig": {
         "access": "public"
