@@ -1,5 +1,5 @@
 {
-    "name": "@roamjs/blueprint3",
+    "name": "blueprint3",
     "version": "3.38.0",
     "private": false,
     "description": "A React UI toolkit for the web - Node 22 compatible fork",
@@ -9,7 +9,7 @@
     "scripts": {
         "bundle": "lerna run --parallel bundle",
         "compile": "lerna run compile",
-        "compile:blueprint3": "lerna run compile --scope \"@roamjs/blueprint3-core\" --scope \"@roamjs/blueprint3-select\" --scope \"@roamjs/blueprint3-datetime\"",
+        "compile:blueprint3": "lerna run compile --scope \"blueprint3-core\" --scope \"blueprint3-select\" --scope \"blueprint3-datetime\"",
         "compile:aliases": "lerna run compile --scope \"@blueprintjs/core\" --scope \"@blueprintjs/select\" --scope \"@blueprintjs/datetime\"",
         "clean": "lerna run --parallel clean",
         "copy:ci-config": "mkdir -p site/.circleci && cp .circleci/config-gh-pages.yml site/.circleci/config.yml",
@@ -26,8 +26,8 @@
         "dev:table": "lerna run dev --parallel --scope \"@blueprintjs/table-dev-app\"",
         "dev:demo": "lerna run dev --parallel --scope \"@blueprintjs/demo-app\"",
         "dist": "run-s dist:libs dist:apps",
-        "dist:libs": "lerna run dist --parallel --scope \"@blueprintjs/{colors,core,datetime,docs-theme,icons,popover2,select,table,timezone}\"",
-        "dist:apps": "lerna run dist --parallel --scope \"@blueprintjs/{docs-app,landing-app,table-dev-app,demo-app}\"",
+        "dist:libs": "cross-env NODE_OPTIONS=--openssl-legacy-provider lerna run dist --parallel --scope \"@blueprintjs/{colors,core,datetime,docs-theme,icons,popover2,select,table,timezone}\"",
+        "dist:apps": "cross-env NODE_OPTIONS=--openssl-legacy-provider lerna run dist --parallel --scope \"@blueprintjs/{docs-app,landing-app,table-dev-app,demo-app}\"",
         "docs-data": "lerna run compile --scope \"@blueprintjs/docs-data\"",
         "format": "prettier --write \"./**/*.{ts,tsx,json}\"",
         "format-check": "prettier --check \"./**/*.{ts,tsx,json}\"",

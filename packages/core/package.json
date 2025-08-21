@@ -1,7 +1,10 @@
 {
-    "name": "@roamjs/blueprint3-core",
-    "version": "3.50.4",
-    "description": "Core styles & components - Node 22 compatible fork",
+    "name": "blueprint3-core",
+    "version": "3.50.4-alpha.1",
+    "description": "Core styles & components - React 18 compatible fork",
+    "publishConfig": {
+        "access": "public"
+    },
     "main": "lib/cjs/index.js",
     "module": "lib/esm/index.js",
     "esnext": "lib/esnext/index.js",
@@ -30,7 +33,7 @@
         "compile:css": "sass-compile ./src",
         "dev": "run-p \"compile:esm -- --watch\" \"compile:css -- --watch\"",
         "dist": "run-s \"dist:*\"",
-        "dist:bundle": "cross-env NODE_ENV=production webpack",
+        "dist:bundle": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider webpack",
         "dist:css": "css-dist lib/css/*.css",
         "dist:variables": "generate-css-variables --retainDefault true common/_colors.scss common/_color-aliases.scss common/_variables.scss",
         "dist:verify": "assert-package-layout",
@@ -46,8 +49,8 @@
         "verify": "npm-run-all compile -p dist test lint"
     },
     "dependencies": {
-        "@roamjs/blueprint3-colors": "^4.0.0-alpha.1",
-        "@roamjs/blueprint3-icons": "^3.30.2",
+        "blueprint3-colors": "^4.0.0-alpha.1",
+        "blueprint3-icons": "^3.30.2",
         "@types/dom4": "^2.0.1",
         "classnames": "^2.2",
         "dom4": "^2.1.5",

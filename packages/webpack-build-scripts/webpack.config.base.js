@@ -102,6 +102,12 @@ module.exports = {
 
     devtool: IS_PRODUCTION ? false : "inline-source-map",
 
+    // Node.js configuration to handle OpenSSL issues with newer Node versions
+    node: {
+        __dirname: false,
+        __filename: false,
+    },
+
     devServer: {
         contentBase: "./src",
         disableHostCheck: true,
