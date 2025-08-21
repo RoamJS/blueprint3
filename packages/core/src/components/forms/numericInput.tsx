@@ -18,7 +18,9 @@ import classNames from "classnames";
 import * as React from "react";
 import { polyfill } from "react-lifecycles-compat";
 
-import { IconName } from "@blueprintjs/icons";
+// import { IconName } from "@blueprintjs/icons";
+// Temporary type definition
+type IconName = string;
 
 import {
     AbstractPureComponent2,

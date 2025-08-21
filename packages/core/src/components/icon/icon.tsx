@@ -18,7 +18,11 @@ import classNames from "classnames";
 import * as React from "react";
 import { polyfill } from "react-lifecycles-compat";
 
-import { IconName, IconSvgPaths16, IconSvgPaths20 } from "@blueprintjs/icons";
+// import { IconName, IconSvgPaths16, IconSvgPaths20 } from "@blueprintjs/icons";
+// Temporary type definitions
+type IconName = string;
+const IconSvgPaths16: Record<string, string[]> = {};
+const IconSvgPaths20: Record<string, string[]> = {};
 
 import { AbstractPureComponent2, Classes, DISPLAYNAME_PREFIX, IntentProps, Props, MaybeElement } from "../../common";
 
