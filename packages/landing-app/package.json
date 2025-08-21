@@ -18,8 +18,8 @@
     "dependencies": {
         "@blueprintjs/core": "^3.50.4",
         "classnames": "^2.2",
-        "react": "^16.14.0",
-        "react-dom": "^16.14.0"
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
         "@blueprintjs/webpack-build-scripts": "^2.0.2",

@@ -29,8 +29,8 @@
         "lodash-es": "^4.17.15",
         "moment": "^2.29.1",
         "normalize.css": "^8.0.1",
-        "react": "^16.14.0",
-        "react-dom": "^16.14.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
         "react-transition-group": "^4.4.1",
         "tslib": "~1.13.0"
     },

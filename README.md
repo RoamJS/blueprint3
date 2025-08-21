@@ -2,6 +2,15 @@
 
 A React 18 compatible fork of [Blueprint](https://blueprintjs.com/) 3, a React UI toolkit for the web.
 
+## 🚀 React 18 Support
+
+This fork has been updated to support React 18 with the following improvements:
+
+-   Updated peer dependencies to support React 16.3+, 17, and 18
+-   Updated dev dependencies to use React 18.2.0
+-   Updated TypeScript types to React 18
+-   Maintains backward compatibility with React 16.3+
+
 ## 📦 Packages
 
 ### New Packages (Recommended)

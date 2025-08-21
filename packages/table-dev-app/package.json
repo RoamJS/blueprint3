@@ -22,8 +22,8 @@
         "dom4": "^2.1.5",
         "lodash-es": "^4.17.15",
         "normalize.css": "^8.0.1",
-        "react": "^16.14.0",
-        "react-dom": "^16.14.0"
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
         "@blueprintjs/webpack-build-scripts": "^2.0.2",
