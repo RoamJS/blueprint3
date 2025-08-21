@@ -9,6 +9,8 @@
     "scripts": {
         "bundle": "lerna run --parallel bundle",
         "compile": "lerna run compile",
+        "compile:blueprint3": "lerna run compile --scope \"@roamjs/blueprint3-core\" --scope \"@roamjs/blueprint3-select\" --scope \"@roamjs/blueprint3-datetime\"",
+        "compile:aliases": "lerna run compile --scope \"@blueprintjs/core\" --scope \"@blueprintjs/select\" --scope \"@blueprintjs/datetime\"",
         "clean": "lerna run --parallel clean",
         "copy:ci-config": "mkdir -p site/.circleci && cp .circleci/config-gh-pages.yml site/.circleci/config.yml",
         "copy:docs-app": "cp -rf packages/docs-app/dist/ site/docs",
