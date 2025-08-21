@@ -6,7 +6,7 @@ Licensed under the Apache License, Version 2.0.
 */
 
 // Import files in the same order that they are documented in the docs
-@import "~@blueprintjs/colors/lib/scss/colors";
+// @import "~@blueprintjs/colors/lib/scss/colors"; // temporarily disabled
 @import "common/variables";
 
 @import "reset";
@@ -145,14 +145,14 @@ $tree-intent-icon-colors-modern: (
 .#{$ns}-dark {
   .#{$ns}-breadcrumbs {
     > li::after {
-      background: svg-icon("16px/chevron-right.svg", (path: (fill: $pt-dark-icon-color)));
+      background: none; /* svg-icon temporarily disabled */
     }
   }
   .#{$ns}-breadcrumbs-collapsed {
     background: rgba($gray3, 0.2);
 
     &::before {
-      background: svg-icon("16px/more.svg", (circle: (fill: $pt-dark-icon-color))) center no-repeat;
+      background: none; /* svg-icon temporarily disabled */
     }
 
     &:hover {
@@ -768,7 +768,7 @@ table.#{$ns}-html-table {
 
     @each $intent, $color in $minimal-dark-tag-intent-colors-modern {
       &.#{$ns}-intent-#{$intent} {
-        @include pt-tag-minimal-dark-intent-modern($color...);
+        @include pt-tag-minimal-dark-intent-modern(nth($color, 1), nth($color, 2), nth($color, 3), nth($color, 4));
       }
     }
   }
