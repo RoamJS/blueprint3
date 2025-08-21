@@ -11,8 +11,10 @@ OUTPUT="${OUTPUT:-lib/css/}"
 # dependencies are hoisted to root node_modules, so load packages from there
 ROOT_NM=../../node_modules
 
-$ROOT_NM/.bin/node-sass-chokidar \
-  --importer $ROOT_NM/node-sass-package-importer/dist/cli.js \
-  --output $OUTPUT \
-  --source-map true \
-  $@
+$ROOT_NM/.bin/sass \
+  --style=expanded \
+  --source-map \
+  --load-path=node_modules \
+  --load-path=../../resources/icons \
+  --load-path=../../packages \
+  $@:$OUTPUT
