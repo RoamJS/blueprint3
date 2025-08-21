@@ -32,3 +32,9 @@ site/docs/*
 !site/docs/
 !site/docs/versions/
 site/docs/versions/**/*.d.ts
+
+# Generated CSS files
+packages/core/src/*.css
+packages/core/src/*.css.map
+packages/icons/src/*.css
+packages/icons/src/*.css.map

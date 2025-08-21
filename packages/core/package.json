@@ -1,7 +1,7 @@
 {
-    "name": "@blueprintjs/core",
+    "name": "@roamjs/blueprint3-core",
     "version": "3.50.4",
-    "description": "Core styles & components",
+    "description": "Core styles & components - Node 22 compatible fork",
     "main": "lib/cjs/index.js",
     "module": "lib/esm/index.js",
     "esnext": "lib/esnext/index.js",
@@ -46,8 +46,8 @@
         "verify": "npm-run-all compile -p dist test lint"
     },
     "dependencies": {
-        "@blueprintjs/colors": "^4.0.0-alpha.1",
-        "@blueprintjs/icons": "^3.30.2",
+        "@roamjs/blueprint3-colors": "^4.0.0-alpha.1",
+        "@roamjs/blueprint3-icons": "^3.30.2",
         "@types/dom4": "^2.0.1",
         "classnames": "^2.2",
         "dom4": "^2.1.5",
@@ -81,17 +81,18 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:palantir/blueprint.git",
+        "url": "git@github.com:roamjs/blueprint3.git",
         "directory": "packages/core"
     },
     "keywords": [
-        "palantir",
+        "roamjs",
         "blueprint",
         "components",
         "styles",
         "theme",
-        "ui"
+        "ui",
+        "node22"
     ],
-    "author": "Palantir Technologies",
+    "author": "RoamJS",
     "license": "Apache-2.0"
 }

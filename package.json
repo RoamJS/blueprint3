@@ -1,8 +1,8 @@
 {
-    "name": "blueprintjs-monorepo",
+    "name": "@roamjs/blueprint3",
     "version": "3.38.0",
-    "private": true,
-    "description": "A React UI toolkit for the web.",
+    "private": false,
+    "description": "A React UI toolkit for the web - Node 22 compatible fork",
     "workspaces": [
         "packages/*"
     ],
@@ -74,9 +74,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:palantir/blueprint.git"
+        "url": "git@github.com:roamjs/blueprint3.git"
     },
-    "author": "Palantir Technologies",
+    "author": "RoamJS",
     "license": "Apache-2.0",
     "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

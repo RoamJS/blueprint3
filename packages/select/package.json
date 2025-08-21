@@ -1,7 +1,7 @@
 {
-    "name": "@blueprintjs/select",
+    "name": "@roamjs/blueprint3-select",
     "version": "3.18.6",
-    "description": "Components related to selecting items from a list",
+    "description": "Components related to selecting items from a list - Node 22 compatible fork",
     "main": "lib/cjs/index.js",
     "module": "lib/esm/index.js",
     "esnext": "lib/esnext/index.js",
@@ -35,7 +35,7 @@
         "verify": "npm-run-all compile -p dist test lint"
     },
     "dependencies": {
-        "@blueprintjs/core": "^3.50.4",
+        "@roamjs/blueprint3-core": "^3.50.4",
         "classnames": "^2.2",
         "tslib": "~1.13.0"
     },
@@ -58,11 +58,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:palantir/blueprint.git",
+        "url": "git@github.com:roamjs/blueprint3.git",
         "directory": "packages/select"
     },
     "keywords": [
-        "palantir",
+        "roamjs",
         "blueprint",
         "components",
         "select",
@@ -71,8 +71,9 @@
         "multiselect",
         "suggest",
         "typeahead",
-        "ui"
+        "ui",
+        "node22"
     ],
-    "author": "Palantir Technologies",
+    "author": "RoamJS",
     "license": "Apache-2.0"
 }
