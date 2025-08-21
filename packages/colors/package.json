@@ -1,6 +1,6 @@
 {
-    "name": "@blueprintjs/colors",
-    "version": "4.0.0-alpha.1",
+    "name": "blueprint3-colors",
+    "version": "4.0.0",
     "description": "Blueprint color definitions",
     "main": "lib/index.js",
     "scripts": {
