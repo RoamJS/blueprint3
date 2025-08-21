@@ -5,7 +5,47 @@
 
 @import "common/variables";
 @import "common/mixins";
-@import "~@blueprintjs/icons/src/icons";
+// @import "~@blueprintjs/icons/src/icons"; // temporarily disabled
+
+// Temporary definition for icon classes
+$icon-classes: ".bp3-icon" !default;
+
+// Temporary definition for icon variables
+$pt-icon-double-caret-vertical: "▼" !default;
+$pt-icon-small-cross: "×" !default;
+$pt-icon-chevron-right: "▶" !default;
+
+// Temporary definition for icons map
+$icons: () !default;
+
+// Temporary definition for pt-icon mixin
+@mixin pt-icon($size: 1em) {
+  // Basic icon styling - this is a simplified version
+  display: inline-block;
+  width: $size;
+  height: $size;
+  vertical-align: middle;
+}
+
+// Temporary definition for pt-icon-colors mixin
+@mixin pt-icon-colors() {
+  // Basic icon color styling - this is a simplified version
+  color: inherit;
+}
+
+// Temporary definition for pt-icon-font-smoothing mixin
+@mixin pt-icon-font-smoothing() {
+  // Basic font smoothing for icons - this is a simplified version
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Temporary definition for pt-icon-sized mixin
+@mixin pt-icon-sized($size) {
+  // Basic icon sizing - this is a simplified version
+  width: $size;
+  height: $size;
+}
 
 /*
 Headings
